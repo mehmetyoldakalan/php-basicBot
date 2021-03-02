@@ -5,8 +5,8 @@
 </head>
 <body>
 <?php 
-$url = "https://adablog.net/french-press-ile-sutlu-filtre-kahve-yapimi/";
-$veri = file_get_contents($url);//file_get_content komutu hedef gösterilen sitenin kaynak kodlarını almaya yarayan komuttur 
+$url = //"www.SiteAdresi.com";
+$veri = file_get_contents($url); 
 $pattern='@<aside id="categories-4" class="widget widget_categories">(.*?)</aside>@si';
 preg_match_all($pattern, $veri, $linkler);
 $gelenveri=($linkler[1][0]);
