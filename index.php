@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>bot</title>
-</head>
-<body>
+
 <?php 
 $url = //"www.SiteAdresi.com";
 $veri = file_get_contents($url); 
@@ -19,5 +14,4 @@ for ($i=0; $i <10 ; $i++) {
 print_r($linkler2[1][8]);
  ?>
 
-</body>
-</html>
+-
